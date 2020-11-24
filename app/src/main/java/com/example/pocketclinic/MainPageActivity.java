@@ -33,7 +33,7 @@ public class MainPageActivity extends AppCompatActivity {
         doctors.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainPageActivity.this,DoctorListActivity.class));
+                startActivity(new Intent(MainPageActivity.this,FindDoctor.class));
             }
         });
         logout.setOnClickListener(new View.OnClickListener() {

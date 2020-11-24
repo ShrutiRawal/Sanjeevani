@@ -4,21 +4,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/bg"
     tools:context=".MainPageActivity"
     android:orientation="vertical">
-
-    <Button
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/create"
-        android:text="Create Chat Room"/>
+        android:layout_marginTop="50dp"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="find doctor"
+            android:layout_marginLeft="100dp"
+            android:id="@+id/findUser"/>
+    </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/userList"
-        android:scrollbars="vertical"
-        android:layout_marginTop="20dp">
+        android:layout_marginTop="50dp"
+        android:id="@+id/chatList">
 
     </androidx.recyclerview.widget.RecyclerView>
 
